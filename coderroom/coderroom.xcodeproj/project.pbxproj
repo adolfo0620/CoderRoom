@@ -16,6 +16,10 @@
 		3EF1BD461FE0C71400946C34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EF1BD441FE0C71400946C34 /* LaunchScreen.storyboard */; };
 		3EF1BD531FE20EE900946C34 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3EF1BD521FE20EE900946C34 /* GoogleService-Info.plist */; };
 		3EF1BD551FE212B300946C34 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF1BD541FE212B300946C34 /* DataService.swift */; };
+		3EF1BD571FE3545800946C34 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF1BD561FE3545800946C34 /* AuthVC.swift */; };
+		3EF1BD591FE3549300946C34 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF1BD581FE3549300946C34 /* LoginVC.swift */; };
+		3EF1BD5B1FE3550700946C34 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF1BD5A1FE3550700946C34 /* InsetTextField.swift */; };
+		3EF1BD5D1FE361B200946C34 /* ShadowVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF1BD5C1FE361B200946C34 /* ShadowVIew.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		3EF1BD471FE0C71400946C34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EF1BD521FE20EE900946C34 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3EF1BD541FE212B300946C34 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		3EF1BD561FE3545800946C34 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
+		3EF1BD581FE3549300946C34 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		3EF1BD5A1FE3550700946C34 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
+		3EF1BD5C1FE361B200946C34 /* ShadowVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowVIew.swift; sourceTree = "<group>"; };
 		93D2F61543D5A4FCAAD98487 /* Pods_coderroom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_coderroom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEC7DCE15A2939B9A5928932 /* Pods-coderroom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coderroom.release.xcconfig"; path = "Pods/Target Support Files/Pods-coderroom/Pods-coderroom.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +95,8 @@
 			children = (
 				3EF1BD3B1FE0C71400946C34 /* FirstViewController.swift */,
 				3EF1BD3D1FE0C71400946C34 /* SecondViewController.swift */,
+				3EF1BD561FE3545800946C34 /* AuthVC.swift */,
+				3EF1BD581FE3549300946C34 /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -94,6 +104,8 @@
 		3EF1BD4E1FE0C77200946C34 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3EF1BD5A1FE3550700946C34 /* InsetTextField.swift */,
+				3EF1BD5C1FE361B200946C34 /* ShadowVIew.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -273,9 +285,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EF1BD571FE3545800946C34 /* AuthVC.swift in Sources */,
 				3EF1BD3E1FE0C71400946C34 /* SecondViewController.swift in Sources */,
+				3EF1BD591FE3549300946C34 /* LoginVC.swift in Sources */,
 				3EF1BD3A1FE0C71400946C34 /* AppDelegate.swift in Sources */,
+				3EF1BD5D1FE361B200946C34 /* ShadowVIew.swift in Sources */,
 				3EF1BD3C1FE0C71400946C34 /* FirstViewController.swift in Sources */,
+				3EF1BD5B1FE3550700946C34 /* InsetTextField.swift in Sources */,
 				3EF1BD551FE212B300946C34 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
