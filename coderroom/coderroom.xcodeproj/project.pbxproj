@@ -23,6 +23,7 @@
 		3EF1BD5F1FE364F500946C34 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF1BD5E1FE364F500946C34 /* AuthService.swift */; };
 		3EF1BD611FE4B59C00946C34 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF1BD601FE4B59C00946C34 /* MeVC.swift */; };
 		3EF1BD631FE6A32600946C34 /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF1BD621FE6A32600946C34 /* CreatePostVC.swift */; };
+		3EF1BD651FE89EAD00946C34 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF1BD641FE89EAD00946C34 /* UIViewExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		3EF1BD5E1FE364F500946C34 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		3EF1BD601FE4B59C00946C34 /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		3EF1BD621FE6A32600946C34 /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
+		3EF1BD641FE89EAD00946C34 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		93D2F61543D5A4FCAAD98487 /* Pods_coderroom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_coderroom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEC7DCE15A2939B9A5928932 /* Pods-coderroom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coderroom.release.xcconfig"; path = "Pods/Target Support Files/Pods-coderroom/Pods-coderroom.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +130,7 @@
 		3EF1BD501FE0C78E00946C34 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				3EF1BD641FE89EAD00946C34 /* UIViewExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EF1BD651FE89EAD00946C34 /* UIViewExt.swift in Sources */,
 				3EF1BD611FE4B59C00946C34 /* MeVC.swift in Sources */,
 				3EF1BD571FE3545800946C34 /* AuthVC.swift in Sources */,
 				3EF1BD3E1FE0C71400946C34 /* GroupsVC.swift in Sources */,
