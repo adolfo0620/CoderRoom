@@ -25,6 +25,7 @@
 		3EF1BD631FE6A32600946C34 /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF1BD621FE6A32600946C34 /* CreatePostVC.swift */; };
 		3EF1BD651FE89EAD00946C34 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF1BD641FE89EAD00946C34 /* UIViewExt.swift */; };
 		3EF1BD671FE8A93C00946C34 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF1BD661FE8A93C00946C34 /* FeedCell.swift */; };
+		3EF1BD691FE8AC7900946C34 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF1BD681FE8AC7900946C34 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		3EF1BD621FE6A32600946C34 /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
 		3EF1BD641FE89EAD00946C34 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		3EF1BD661FE8A93C00946C34 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		3EF1BD681FE8AC7900946C34 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		93D2F61543D5A4FCAAD98487 /* Pods_coderroom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_coderroom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEC7DCE15A2939B9A5928932 /* Pods-coderroom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coderroom.release.xcconfig"; path = "Pods/Target Support Files/Pods-coderroom/Pods-coderroom.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,6 +128,7 @@
 		3EF1BD4F1FE0C77B00946C34 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3EF1BD681FE8AC7900946C34 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				3EF1BD3C1FE0C71400946C34 /* FeedVC.swift in Sources */,
 				3EF1BD5B1FE3550700946C34 /* InsetTextField.swift in Sources */,
 				3EF1BD551FE212B300946C34 /* DataService.swift in Sources */,
+				3EF1BD691FE8AC7900946C34 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
