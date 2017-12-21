@@ -11,8 +11,6 @@ import Firebase
 
 class CreatePostVC: UIViewController {
 
-    
-    
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var emailLbl: UILabel!
     
@@ -25,6 +23,10 @@ class CreatePostVC: UIViewController {
         sendBtn.bindTokeybroard()
 
         // Do any additional setup after loading the view.
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.emailLbl.text = Auth.auth().currentUser?.email
     }
     
     @IBAction func sendBtnWasPressed(_ sender: Any) {
