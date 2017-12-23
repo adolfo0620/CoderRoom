@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		317F609C2FF5D4A26689114C /* Pods_coderroom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D2F61543D5A4FCAAD98487 /* Pods_coderroom.framework */; };
+		3E3DC7D01FEDFC1900E2A199 /* CreateGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3DC7CF1FEDFC1900E2A199 /* CreateGroupVC.swift */; };
 		3EF1BD3A1FE0C71400946C34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF1BD391FE0C71400946C34 /* AppDelegate.swift */; };
 		3EF1BD3C1FE0C71400946C34 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF1BD3B1FE0C71400946C34 /* FeedVC.swift */; };
 		3EF1BD3E1FE0C71400946C34 /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF1BD3D1FE0C71400946C34 /* GroupsVC.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		2B18A0E8A40092FC58852DF3 /* Pods-coderroom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coderroom.debug.xcconfig"; path = "Pods/Target Support Files/Pods-coderroom/Pods-coderroom.debug.xcconfig"; sourceTree = "<group>"; };
+		3E3DC7CF1FEDFC1900E2A199 /* CreateGroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupVC.swift; sourceTree = "<group>"; };
 		3EF1BD361FE0C71400946C34 /* coderroom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coderroom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EF1BD391FE0C71400946C34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EF1BD3B1FE0C71400946C34 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				3EF1BD581FE3549300946C34 /* LoginVC.swift */,
 				3EF1BD601FE4B59C00946C34 /* MeVC.swift */,
 				3EF1BD621FE6A32600946C34 /* CreatePostVC.swift */,
+				3E3DC7CF1FEDFC1900E2A199 /* CreateGroupVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				3EF1BD591FE3549300946C34 /* LoginVC.swift in Sources */,
 				3EF1BD5F1FE364F500946C34 /* AuthService.swift in Sources */,
 				3EF1BD3A1FE0C71400946C34 /* AppDelegate.swift in Sources */,
+				3E3DC7D01FEDFC1900E2A199 /* CreateGroupVC.swift in Sources */,
 				3EF1BD5D1FE361B200946C34 /* ShadowVIew.swift in Sources */,
 				3EF1BD631FE6A32600946C34 /* CreatePostVC.swift in Sources */,
 				3EF1BD3C1FE0C71400946C34 /* FeedVC.swift in Sources */,
