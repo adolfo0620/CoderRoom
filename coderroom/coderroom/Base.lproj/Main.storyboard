@@ -550,13 +550,51 @@
                                         <rect key="frame" x="0.0" y="203" width="335" height="354"/>
                                         <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="atQ-Je-r0f">
-                                                <rect key="frame" x="0.0" y="28" width="335" height="44"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="userCell" rowHeight="60" id="atQ-Je-r0f" customClass="UserCell" customModule="coderroom" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="335" height="60"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="atQ-Je-r0f" id="ABg-ir-zAf">
-                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="44"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="60"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="s8r-zb-3B9">
+                                                            <rect key="frame" x="10" y="0.0" width="44" height="60"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="44" id="0mJ-S4-27w"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User@coderroom.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="bMB-kO-8fW">
+                                                            <rect key="frame" x="74" y="21" width="221" height="18"/>
+                                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
+                                                            <color key="textColor" red="0.30214685200000002" green="0.74723225829999995" blue="0.33267867569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteCheckmark" translatesAutoresizingMaskIntoConstraints="NO" id="NQM-5W-zlN">
+                                                            <rect key="frame" x="305" y="0.0" width="20" height="60"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="20" id="xd5-wu-qs3"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="s8r-zb-3B9" firstAttribute="top" secondItem="ABg-ir-zAf" secondAttribute="top" id="4b1-U4-YWB"/>
+                                                        <constraint firstItem="NQM-5W-zlN" firstAttribute="leading" secondItem="bMB-kO-8fW" secondAttribute="trailing" constant="10" id="Ris-Ol-dN6"/>
+                                                        <constraint firstItem="s8r-zb-3B9" firstAttribute="leading" secondItem="ABg-ir-zAf" secondAttribute="leading" constant="10" id="Y7Q-Uh-mFV"/>
+                                                        <constraint firstItem="bMB-kO-8fW" firstAttribute="leading" secondItem="s8r-zb-3B9" secondAttribute="trailing" constant="20" id="dj4-sl-pU2"/>
+                                                        <constraint firstAttribute="bottom" secondItem="NQM-5W-zlN" secondAttribute="bottom" id="gd2-5v-EmX"/>
+                                                        <constraint firstAttribute="trailing" secondItem="NQM-5W-zlN" secondAttribute="trailing" constant="10" id="oyE-Lx-UmD"/>
+                                                        <constraint firstItem="bMB-kO-8fW" firstAttribute="top" secondItem="ABg-ir-zAf" secondAttribute="topMargin" constant="10" id="p3X-RW-Rbb"/>
+                                                        <constraint firstAttribute="bottom" secondItem="s8r-zb-3B9" secondAttribute="bottom" id="tac-pf-G8R"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="bMB-kO-8fW" secondAttribute="bottom" constant="10" id="wBX-1y-iUk"/>
+                                                        <constraint firstItem="NQM-5W-zlN" firstAttribute="top" secondItem="ABg-ir-zAf" secondAttribute="top" id="yLC-lM-Fg0"/>
+                                                    </constraints>
                                                 </tableViewCellContentView>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <outlet property="checkImg" destination="NQM-5W-zlN" id="siy-kh-mXH"/>
+                                                    <outlet property="emailLbl" destination="bMB-kO-8fW" id="fZ4-KD-tBw"/>
+                                                    <outlet property="profileImg" destination="s8r-zb-3B9" id="nbP-i4-IHv"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
@@ -816,6 +854,7 @@
         <image name="logoutIcon" width="19" height="21"/>
         <image name="me-tabIcon" width="25" height="25"/>
         <image name="send" width="29" height="29"/>
+        <image name="whiteCheckmark" width="18" height="14"/>
     </resources>
     <color key="tintColor" red="0.26884094380000001" green="0.67447886850000005" blue="0.69676020510000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
