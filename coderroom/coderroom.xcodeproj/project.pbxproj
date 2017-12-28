@@ -11,6 +11,7 @@
 		3E3DC7D01FEDFC1900E2A199 /* CreateGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3DC7CF1FEDFC1900E2A199 /* CreateGroupVC.swift */; };
 		3E3DC7D21FEED96200E2A199 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3DC7D11FEED96200E2A199 /* UserCell.swift */; };
 		3EEB92C11FF593C000865B7C /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEB92C01FF593C000865B7C /* GroupCell.swift */; };
+		3EEB92C31FF59CAC00865B7C /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEB92C21FF59CAC00865B7C /* Group.swift */; };
 		3EF1BD3A1FE0C71400946C34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF1BD391FE0C71400946C34 /* AppDelegate.swift */; };
 		3EF1BD3C1FE0C71400946C34 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF1BD3B1FE0C71400946C34 /* FeedVC.swift */; };
 		3EF1BD3E1FE0C71400946C34 /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF1BD3D1FE0C71400946C34 /* GroupsVC.swift */; };
@@ -36,6 +37,7 @@
 		3E3DC7CF1FEDFC1900E2A199 /* CreateGroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupVC.swift; sourceTree = "<group>"; };
 		3E3DC7D11FEED96200E2A199 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		3EEB92C01FF593C000865B7C /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
+		3EEB92C21FF59CAC00865B7C /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		3EF1BD361FE0C71400946C34 /* coderroom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coderroom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EF1BD391FE0C71400946C34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EF1BD3B1FE0C71400946C34 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				3EF1BD681FE8AC7900946C34 /* Message.swift */,
+				3EEB92C21FF59CAC00865B7C /* Group.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				3EF1BD591FE3549300946C34 /* LoginVC.swift in Sources */,
 				3EF1BD5F1FE364F500946C34 /* AuthService.swift in Sources */,
 				3EF1BD3A1FE0C71400946C34 /* AppDelegate.swift in Sources */,
+				3EEB92C31FF59CAC00865B7C /* Group.swift in Sources */,
 				3E3DC7D21FEED96200E2A199 /* UserCell.swift in Sources */,
 				3E3DC7D01FEDFC1900E2A199 /* CreateGroupVC.swift in Sources */,
 				3EF1BD5D1FE361B200946C34 /* ShadowVIew.swift in Sources */,
