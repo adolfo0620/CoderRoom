@@ -10,6 +10,7 @@
 		317F609C2FF5D4A26689114C /* Pods_coderroom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D2F61543D5A4FCAAD98487 /* Pods_coderroom.framework */; };
 		3E3DC7D01FEDFC1900E2A199 /* CreateGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3DC7CF1FEDFC1900E2A199 /* CreateGroupVC.swift */; };
 		3E3DC7D21FEED96200E2A199 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3DC7D11FEED96200E2A199 /* UserCell.swift */; };
+		3EEB92C11FF593C000865B7C /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEB92C01FF593C000865B7C /* GroupCell.swift */; };
 		3EF1BD3A1FE0C71400946C34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF1BD391FE0C71400946C34 /* AppDelegate.swift */; };
 		3EF1BD3C1FE0C71400946C34 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF1BD3B1FE0C71400946C34 /* FeedVC.swift */; };
 		3EF1BD3E1FE0C71400946C34 /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF1BD3D1FE0C71400946C34 /* GroupsVC.swift */; };
@@ -34,6 +35,7 @@
 		2B18A0E8A40092FC58852DF3 /* Pods-coderroom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coderroom.debug.xcconfig"; path = "Pods/Target Support Files/Pods-coderroom/Pods-coderroom.debug.xcconfig"; sourceTree = "<group>"; };
 		3E3DC7CF1FEDFC1900E2A199 /* CreateGroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupVC.swift; sourceTree = "<group>"; };
 		3E3DC7D11FEED96200E2A199 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		3EEB92C01FF593C000865B7C /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		3EF1BD361FE0C71400946C34 /* coderroom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coderroom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EF1BD391FE0C71400946C34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EF1BD3B1FE0C71400946C34 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				3EF1BD5C1FE361B200946C34 /* ShadowVIew.swift */,
 				3EF1BD661FE8A93C00946C34 /* FeedCell.swift */,
 				3E3DC7D11FEED96200E2A199 /* UserCell.swift */,
+				3EEB92C01FF593C000865B7C /* GroupCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				3EF1BD651FE89EAD00946C34 /* UIViewExt.swift in Sources */,
 				3EF1BD671FE8A93C00946C34 /* FeedCell.swift in Sources */,
 				3EF1BD611FE4B59C00946C34 /* MeVC.swift in Sources */,
+				3EEB92C11FF593C000865B7C /* GroupCell.swift in Sources */,
 				3EF1BD571FE3545800946C34 /* AuthVC.swift in Sources */,
 				3EF1BD3E1FE0C71400946C34 /* GroupsVC.swift in Sources */,
 				3EF1BD591FE3549300946C34 /* LoginVC.swift in Sources */,
