@@ -369,7 +369,7 @@
         <!--Group FeedVC-->
         <scene sceneID="Pmu-ha-qXF">
             <objects>
-                <viewController id="cMD-a6-Zln" customClass="GroupFeedVC" customModule="coderroom" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GroupFeedVC" id="cMD-a6-Zln" customClass="GroupFeedVC" customModule="coderroom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yTx-zP-Xa8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -477,8 +477,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hiQ-lg-Yc0">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="grouptitle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vb-at-ExP">
-                                        <rect key="frame" x="108" y="34.5" width="160" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="grouptitle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vb-at-ExP">
+                                        <rect key="frame" x="108" y="35" width="160" height="21"/>
                                         <color key="tintColor" red="0.26884094380000001" green="0.67447886850000005" blue="0.69676020510000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="160" id="nQB-Js-aDQ"/>
@@ -488,7 +488,7 @@
                                         <color key="textColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yiL-ow-qtq">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yiL-ow-qtq">
                                         <rect key="frame" x="20" y="34" width="12" height="22"/>
                                         <state key="normal" image="backIcon"/>
                                         <connections>
@@ -500,6 +500,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="RGu-FC-SYc"/>
                                     <constraint firstItem="9vb-at-ExP" firstAttribute="centerX" secondItem="hiQ-lg-Yc0" secondAttribute="centerX" id="buX-VS-F0K"/>
+                                    <constraint firstItem="yiL-ow-qtq" firstAttribute="top" secondItem="hiQ-lg-Yc0" secondAttribute="top" constant="34" id="fFn-J7-vY7"/>
                                     <constraint firstItem="9vb-at-ExP" firstAttribute="centerY" secondItem="yiL-ow-qtq" secondAttribute="centerY" id="x82-O7-xB6"/>
                                     <constraint firstItem="yiL-ow-qtq" firstAttribute="leading" secondItem="hiQ-lg-Yc0" secondAttribute="leading" constant="20" id="xIN-GA-bEM"/>
                                 </constraints>

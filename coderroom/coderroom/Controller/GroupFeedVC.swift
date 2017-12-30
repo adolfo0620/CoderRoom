@@ -17,6 +17,19 @@ class GroupFeedVC: UIViewController {
     @IBOutlet weak var membersLbl: UILabel!
     @IBOutlet weak var groupTitleLbl: UILabel!
     @IBOutlet weak var tableView: UITableView!
+    var group: Group?
+    
+    func initData(forGroup group: Group){
+            self.group = group
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        groupTitleLbl.text = group?.groupTitle
+        DataService.instance.getEmails(group: group!) { (returnEmails) in
+            self.membersLbl.text = returnEmails.joined(separator: ", ")
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
