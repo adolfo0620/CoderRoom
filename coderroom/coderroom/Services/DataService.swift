@@ -41,7 +41,8 @@ class DataService {
     
     func uploadPost(withMessage message: String, forUID uid: String, withGroupKey groupKey: String?, sendComplete: @escaping (_ status: Bool) -> Void){
         if groupKey != nil {
-            // send to groups ref
+            REF_GROUPS.child(groupKey!).child("messages").childByAutoId().updateChildValues(["content":message, "senderId": uid])
+            sendComplete(true)
         } else {
             REF_FEED.childByAutoId().updateChildValues(["content": message, "senderId": uid])
             sendComplete(true)
@@ -71,6 +72,20 @@ class DataService {
             }
             handler(messageArray)
         }, withCancel: nil)
+    }
+    
+    func getAllMessageFor(desiredGroup: Group, handler: @escaping (_ messagesArray: [Message]) -> Void){
+        var groupMessageArray = [Message]()
+        REF_GROUPS.child(desiredGroup.key).child("messages").observeSingleEvent(of: .value) { (groupMessageSnapshot) in
+            guard let groupMessageSnapshot = groupMessageSnapshot.children.allObjects as? [DataSnapshot] else { return }
+            for groupMessage in groupMessageSnapshot {
+                let content = groupMessage.childSnapshot(forPath: "content").value as! String
+                let senderId = groupMessage.childSnapshot(forPath: "senderId").value as! String
+                let groupMessage = Message(content: content, senderId: senderId)
+                groupMessageArray.append(groupMessage)
+            }
+            handler(groupMessageArray)
+        }
     }
     
     func getEamil(forSearchQuery query: String, handler : @escaping (_ emailArray: [String]) -> Void){
